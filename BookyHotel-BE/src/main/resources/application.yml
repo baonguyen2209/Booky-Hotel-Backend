@@ -1,0 +1,22 @@
+server:
+  port: 9192
+  tomcat:
+    max-http-post-size: 52428800
+
+spring:
+  datasource:
+    username: root
+    password:
+    url: jdbc:mysql://localhost:3306/booky_hotel_db
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+  servlet:
+    multipart:
+    max-file-size: 50MB
+    max-request-size: 50MB
+    
+
